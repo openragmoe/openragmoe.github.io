@@ -6,7 +6,7 @@
         content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
   <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>OPEN-RAG: Enhanced Retrieval Augmented Reasoning with Open-Source Large Language Models</title>
+  <title>Open-RAG: Enhanced Retrieval Augmented Reasoning with Open-Source Large Language Models</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script> -->
@@ -88,7 +88,8 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Open-RAG: Enhanced Retrieval Augmented Reasoning with Open-Source Large Language Models</h1>
+          <h1 class="title is-1 publication-title">
+            <span style="font-variant: small-caps;">Open-RAG</span>: Enhanced Retrieval Augmented Reasoning with Open-Source Large Language Models</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://shayekhbinislam.github.io/">Shayekh Bin Islam</a><sup>*,1,6,7</sup>,</span>
@@ -121,7 +122,7 @@
             <span class="author-block"><sup>5</sup>Qatar Computing Research Institute (QCRI),</span>
             <span class="author-block"><sup>6</sup>Fatima Al-Fihri Predoctoral Fellowship,</span>
             <span class="author-block"><sup>7</sup>Cohere For AI Community</span>
-        
+            <span class="eql-cntrb"><small><br><sup>*</sup>Equal Contribution</small></span>        
           </div>
 
           <div class="column has-text-centered">
@@ -170,7 +171,8 @@
                 <a href="https://huggingface.co/shayekh/openrag_llama2_7b_8x135m"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                      <i class="far fa-images"></i>
+                      <!-- <i class="far fa-images"></i> -->
+                      🤗
                   </span>
                   <span>Model</span>
                   </a>
@@ -179,7 +181,8 @@
                 <a href="https://huggingface.co/datasets/shayekh/openrag_train_data"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                      <i class="far fa-images"></i>
+                      <!-- <i class="far fa-images"></i> -->
+                      🤗
                   </span>
                   <span>Train Dataset</span>
                   </a>
@@ -188,7 +191,8 @@
                 <a href="https://huggingface.co/datasets/shayekh/openrag_bench"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                      <i class="far fa-images"></i>
+                      <!-- <i class="far fa-images"></i> -->
+                      🤗
                   </span>
                   <span>Eval Dataset</span>
                   </a>
@@ -285,7 +289,10 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <p> Retrieval-Augmented Generation (RAG) has been shown to enhance the factual accuracy of Large Language Models (LLMs) , but existing methods often suffer from limited reasoning capabilities in effectively using the retrieved evidence, particularly when using open-source LLMs. To mitigate this gap, we introduce a novel framework, OPEN-RAG, designed to enhance reasoning capabilities in RAG with open-source LLMs. Our framework transforms an arbitrary dense LLM into a parameter-efficient sparse mixture of experts (MoE) model capable of handling complex reasoning tasks, including both single- and multi-hop queries. OPEN-RAG uniquely trains the model to navigate challenging distractors that appear relevant but are misleading. As a result, OPEN-RAG lever-ages latent learning, dynamically selecting relevant experts and integrating external knowledge effectively for more accurate and contextuallyrelevant responses. In addition, we propose a hybrid adaptive retrieval method to determine retrieval necessity and balance the trade-off between performance gain and inference speed. Experimental results show that the Llama2-7B-based OPEN-RAG outperforms state-of-the-art LLMs and RAG models in various knowledge-intensive tasks, surpassing Chat-GPT, Self-RAG, and Command R+ in the RAG setting. 
+          <p> Retrieval-Augmented Generation (RAG) has been shown to enhance the factual accuracy of Large Language Models (LLMs) , but existing methods often suffer from limited reasoning capabilities in effectively using the retrieved evidence, particularly when using open-source LLMs. To mitigate this gap, we introduce a novel framework, 
+            <span style="font-variant: small-caps;">Open-RAG</span>, designed to enhance reasoning capabilities in RAG with open-source LLMs. Our framework transforms an arbitrary dense LLM into a parameter-efficient sparse mixture of experts (MoE) model capable of handling complex reasoning tasks, including both single- and multi-hop queries. 
+            <span style="font-variant: small-caps;">Open-RAG</span> uniquely trains the model to navigate challenging distractors that appear relevant but are misleading. As a result, OPEN-RAG lever-ages latent learning, dynamically selecting relevant experts and integrating external knowledge effectively for more accurate and contextuallyrelevant responses. In addition, we propose a hybrid adaptive retrieval method to determine retrieval necessity and balance the trade-off between performance gain and inference speed. Experimental results show that the Llama2-7B-based 
+            <span style="font-variant: small-caps;">Open-RAG</span> outperforms state-of-the-art LLMs and RAG models in various knowledge-intensive tasks, surpassing Chat-GPT, Self-RAG, and Command R+ in the RAG setting. 
           <!-- We open-source our code and models at https://github.com/ShayekhBinIslam/ openrag. -->
           </p>
         </div>
@@ -484,8 +491,6 @@
             licensed under a <a rel="license"
                                                 href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-          <p>
             Use its <a href="https://github.com/nerfies/nerfies.github.io">source code</a> to reproduce and follow its terms of linking back.
           </p>
         </div>
